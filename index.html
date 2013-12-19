@@ -13,6 +13,9 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width" />
 	<title>Zeelenberg Visualization Demo</title
+	<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/rgbcolor.js"></script>  <!-- added line-->
+	<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/StackBlur.js"></script> <!-- added line-->
+	<script type="text/javascript" src="http://canvg.googlecode.com/svn/trunk/canvg.js"></script>  <!-- added line-->
 	<link type="text/css" rel="stylesheet" href="css/normalize.css" />
 	<link type="text/css" rel="stylesheet" href="css/foundation.min.css" />
 	<link type="text/css" rel="stylesheet" href="css/rickshaw.min.css">
@@ -62,7 +65,7 @@
 	<script src="js/rickshaw.min.js"></script>
 
 </head>
-<body>
+<body onload="canvg()"> <!-- added  onload="canvg()"-->
 
 	<!-- Header -->
 	<div style="background: #101C24;">
